@@ -9,20 +9,20 @@ const input = readline.createInterface({
 })
 
 let name = ""
-input.question("Por favor, digite seu nome completo:", (nameImput) => {
-    name = nameImput
+input.question("Por favor, digite seu nome completo:", (nameInput) => {
+    name = nameInput
 
     let CPF = 0
-    input.question("Por favor, digite seu CPF:", (cpfImput) => {
-        CPF = cpfImput
+    input.question("Por favor, digite seu CPF:", (cpfInput) => {
+        CPF = cpfInput
 
         let month = 0
-        input.question("Por favor, digite o mês do pagamento:", (monthImput) => {
-            month = monthImput
+        input.question("Por favor, digite o mês do pagamento:", (monthInput) => {
+            month = monthInput
 
             let grossPay = 0
-            input.question("Por favor, digite o seu salário bruto:", (grossPayImput) => {
-                grossPay = grossPayImput
+            input.question("Por favor, digite o seu salário bruto:", (grossPayInput) => {
+                grossPay = grossPayInput
 
                 const INSS = calcINSS(grossPay)
                 const IR = calcIR(grossPay)
